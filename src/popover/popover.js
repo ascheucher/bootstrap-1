@@ -16,4 +16,17 @@ angular.module( 'ui.bootstrap.popover', [ 'ui.bootstrap.tooltip' ] )
 
 .directive( 'popover', [ '$tooltip', function ( $tooltip ) {
   return $tooltip( 'popover', 'popover', 'click' );
+}])
+
+.directive( 'popoverHtmlUnsavePopup', function () {
+  return {
+    restrict: 'EA',
+    replace: true,
+    scope: { title: '@', content: '@', placement: '@', animation: '&', isOpen: '&' },
+    templateUrl: 'template/popover/popover-html-unsave.html'
+  };
+})
+
+.directive( 'popoverHtmlUnsave', [ '$tooltip', function ( $tooltip ) {
+  return $tooltip( 'popoverHtmlUnsave', 'popover', 'click' );
 }]);

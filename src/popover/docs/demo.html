@@ -9,14 +9,14 @@
       <input type="text" ng-model="dynamicPopoverTitle" class="form-control">
     </div>
     <button popover="{{dynamicPopover}}" popover-title="{{dynamicPopoverTitle}}" class="btn btn-default">Dynamic Popover</button>
-    
+
     <hr />
     <h4>Positional</h4>
     <button popover-placement="top" popover="On the Top!" class="btn btn-default">Top</button>
     <button popover-placement="left" popover="On the Left!" class="btn btn-default">Left</button>
     <button popover-placement="right" popover="On the Right!" class="btn btn-default">Right</button>
     <button popover-placement="bottom" popover="On the Bottom!" class="btn btn-default">Bottom</button>
-    
+
     <hr />
     <h4>Triggers</h4>
     <p>
@@ -28,4 +28,8 @@
     <h4>Other</h4>
     <button Popover-animation="true" popover="I fade in and out!" class="btn btn-default">fading</button>
     <button popover="I have a title!" popover-title="The title." class="btn btn-default">title</button>
+
+    <hr />
+    <h4>With HTML as content</h4>
+    <button popover="I have some<br />multiline text." class="btn btn-default">With HTML</button>
 </div>
